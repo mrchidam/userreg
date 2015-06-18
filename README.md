@@ -1,2 +1,0 @@
-# userreg
-User Registration System
