@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            h1{
+                color: green;
+                font-family: sans-serif;
+            }
+            body{
+                color: red;
+                background-color: wheat;
+                font-family:cursive;
+            }
+        </style>          
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>GammaAnalytics User Registration System - Login</title>
+    </head>
+    <body>
+        <a href="index.jsp"><input type="submit" value="HOME"/></a>
+    <center>
+        <h1>GammaAnalytics User Registration System</h1>
+        <h2>Dear User, Kindly log in to the System</h2>
+        <form action="Login.jsp" method="POST">
+        <table>
+            <tr><td>E-Mail(Username):</td> <td><input type = "email" id="emailTextBox" name="emailTextBox" required/></td></tr>
+            <tr><td>Password:</td><td><input type="password" id="passwordTextBox" name="passwordTextBox" required/></td></tr>            
+        </table>
+        <input type="submit" value="Login"/>
+        </form>
+        <a href="ForgotPasswordForm.html">Forgot password?</a>
+    </center>
+    </body>
+</html>
