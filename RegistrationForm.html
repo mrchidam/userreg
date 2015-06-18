@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            h1{
+                color: green;
+                font-family: sans-serif;
+            }
+            body{
+                color: red;
+                background-color: wheat;
+                font-family:cursive;
+            }
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>GammaAnalytics User Registration System - Registration</title>
+    </head>
+    <body>
+        <a href="index.jsp"><input type="submit" value="HOME"/></a>
+    <center>
+        <h1>GammaAnalytics User Registration System</h1>
+        <h2>Fill up your Details</h2>
+        <form action="Register.jsp" method="POST">
+            <table>
+                <tr><td>First Name:</td> <td><input type="text" id="firstNameTextBox" name="firstNameTextBox" required/></td></tr>
+                <tr><td>Last Name:</td> <td><input type="text" id="lastNameTextBox" name="lastNameTextBox"/></td></tr>
+                <tr><td>E-Mail(Username):</td> <td><input type = "email" id="emailTextBox" name="emailTextBox" required/></td></tr>
+                <tr><td>Password:</td><td><input type="password" id="passwordTextBox" name="passwordTextBox" required/></td></tr>
+                <tr><td>Security Question:</td><td><select id="securityQuestionDropDown" name="securityQuestionDropDown">
+                            <option>What is your first Teacher's Name?</option>
+                            <option>What is your first School Name?</option>
+                            <option>What is your first Pet's Name?</option>
+                            <option>Who is your first Crush?</option>
+                        </select></td></tr>
+                <tr><td>Answer:</td><td><input type="text" id="securityAnswerTextBox" name="securityAnswerTextBox"></td></tr>
+                <tr><td>Gender:</td><td><select id="genderDropDown" name="genderDropDown">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select></td></tr>
+                <tr><td>Age:</td><td><input type="number" id="ageTextBox" name="ageTextBox" required></td></tr>
+            </table>
+            <input type="submit" value="Register"/>
+        </form>
+    </center>    
+    </body>
+</html>
